@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--手机虚拟键和应用重叠的问题靠fitsSystemWindows加在最外面来解决-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+
+    tools:context="com.wanlichangmeng.tonglurendesign.activity.MainActivity">
+
+
+
+    <!--layout_height必须是0dp,这里是通过design设计得到的界面参数，改了viewpager就长了-->
+    <LinearLayout
+        android:id="@+id/main_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.wanlichangmeng.tonglurendesign.utils.ViewPagerHelper
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/fragment_home_info_btn_retract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收起"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fragment_home_info_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user1"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/fragment_home_info_tripdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fragment_home_info_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_home_info_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="caizhi.zhou"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fragment_home_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="约个冒菜什么额的"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/fragment_home_info_travelMode"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#FFF"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/runner" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/fragment_home_info_travelType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双人出行"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/fragment_home_info_status"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#FFF"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heart_48" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/launcher_item_normal"></View>
+    <TextView
+        android:id="@+id/fragment_home_info_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="你整天说着日了狗日了狗，但是你却没有来，呵呵呵呵呵呵呵呵呵呵fgdsagdsafdsafasdfa~"/>
+    
+    <!--<ImageView-->
+        <!--android:id="@+id/badge"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="5dp" >-->
+    <!--</ImageView>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:ellipsize="end"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="14dp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/snippet"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ellipsize="end"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#ff7f7f7f"-->
+            <!--android:textSize="14dp" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

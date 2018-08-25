@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/updating_cl1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"></android.support.constraint.ConstraintLayout>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_updating_tab1_itm_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="MyUsername"
+            app:layout_constraintLeft_toRightOf="@+id/avatar"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/font_368"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/fragment_updating_tab1_itm_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_updating_tab1_itm_1"/>
+    <TextView
+        android:id="@+id/fragment_updating_tab1_itm_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_updating_tab1_itm_2"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_updating_tab1_itm_3">
+        <TextView
+            android:id="@+id/foot_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.6.20"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/foot_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="679"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <ImageView
+            android:id="@+id/foot_agree"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            app:layout_constraintRight_toLeftOf="@+id/foot_right"/>
+        <ImageView
+            android:id="@+id/foot_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mms"
+            app:layout_constraintRight_toLeftOf="@+id/foot_agree"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
